@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Goofy's Gag Calculator</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src='scripts/jquery-3.1.0.min.js'></script>
+</head>
+<body ng-controller="AppCtrl" ng-app="MyApp">
+    <div id="allGagContainer">
+        <div id="table">
+            <div id="tableBody">
+                <!-----Toonup----->
+                <div id="gagRow">
+                    <div id="toonupContainer">
+                        <div id="gagContainer">
+                            TOON-UP
+                            <div id="XPContainer">
+                                <div id="toonupXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="featherGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="megaphoneGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="lipstickGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bambooCaneGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="pixieDustGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="jugglingBallsGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="highDiveGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----Trap----->
+                <div id="gagRow">
+                    <div id="trapContainer">
+                        <div id="gagContainer">
+                            TRAP
+                            <div id="XPContainer">
+                                <div id="trapXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bananaPeelGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="rakeGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="marblesGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="quickSandGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="trapdoorGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="tntGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="railroadGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----Lure----->
+                <div id="gagRow">
+                    <div id="lureContainer">
+                        <div id="gagContainer">
+                            LURE
+                            <div id="XPContainer">
+                                <div id="lureXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="oneBillGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="smallMagnetGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="fiveBillGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bigMagnetGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="tenBillGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="hypnoGogglesGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="presentationGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----Sound----->
+                <div id="gagRow">
+                    <div id="soundContainer">
+                        <div id="gagContainer">
+                            SOUND
+                            <div id="XPContainer">
+                                <div id="soundXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bikeHornGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="whistleGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bugleGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="aoogahGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="elephantTrunkGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="foghornGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="operaSingerGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----Throw----->
+                <div id="gagRow">
+                    <div id="throwContainer">
+                        <div id="gagContainer">
+                            THROW
+                            <div id="XPContainer">
+                                <div id="throwXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="cupcakeGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="fruitPieSliceGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="creamPieSliceGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="wholeFruitPieGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="wholeCreamPieGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="birthdayCakeGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="weddingCakeGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----Squirt----->
+                <div id="gagRow">
+                    <div id="squirtContainer">
+                        <div id="gagContainer">
+                            SQUIRT
+                            <div id="XPContainer">
+                                <div id="squirtXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="squirtingFlowerGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="glassOfWaterGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="squirtGunGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="seltzerBottlePieGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="fireHosePieGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="stormCloudGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="geyserGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----Drop----->
+                <div id="gagRow">
+                    <div id="dropContainer">
+                        <div id="gagContainer">
+                            DROP
+                            <div id="XPContainer">
+                                <div id="dropXPContainer">
+                                    0 to Go!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="flowerPotGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="sandbagGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="anvilGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="bigWeightPieGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="safeGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="grandPianoGagContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+                        <div id="gagContainer">
+                            <div id="toontanicContainer">
+                                <div id="gagCounter">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                   
+        </div>
+        
+        <div class="divTable">
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCellMainDisplay">
+                        <img class="trashCan" draggable="false" data-alt-src="images/trashcanOpen.png" data-done-src="images/trashcanDone.png"
+                             src="images/trashcan.png" />
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                            Cogs Destroyed | <span id="totalDamage">Total Damage: 0</span>
+                        <br />
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(1)" aria-label="Level 1" ng-model="data.c1">
+                                Level 1
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(2)" aria-label="Level 2" ng-model="data.c2">
+                                Level 2
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(3)" aria-label="Level 3" ng-model="data.c3">
+                                Level 3
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(4)" aria-label="Level 4" ng-model="data.c4">
+                                Level 4
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(5)" aria-label="Level 5" ng-model="data.c5">
+                                Level 5
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(6)" aria-label="Level 6" ng-model="data.c6">
+                                Level 6
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(7)" aria-label="Level 7" ng-model="data.c7">
+                                Level 7
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(8)" aria-label="Level 8" ng-model="data.c8">
+                                Level 8
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(9)" aria-label="Level 9" ng-model="data.c9">
+                                Level 9
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(10)" aria-label="Level 10" ng-model="data.c10">
+                                Level 10
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(11)" aria-label="Level 11" ng-model="data.c11">
+                                Level 11
+                            </md-checkbox>
+                            <md-checkbox ng-disabled="true" md-indeterminate="checkindeterminateCogs(12)" aria-label="Level 12" ng-model="data.c12">
+                                Level 12
+                            </md-checkbox>
+                    </div>
+                    <!--<div class="divTableCellMainDisplay">&nbsp;</div>-->
+                </div>
+                </div>
+            </div>
+
+                <div class="divTableRow">
+                    
+                    <div class="divTableCellMainDisplay">
+                        <md-button class="md-raised md-primary" ng-click="resetBoard()">Reset Board</md-button>
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                        <div class="versionTwoCogs">
+                            <md-switch ng-model="data.cogVersion" ng-change="changeVersionOfCog()" aria-label="Switch 1">
+                                2.0 Cogs
+                            </md-switch>
+                        </div>
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                        <md-button ng-model="data.cogCarryOver" class="md-primary md-raised cog-version-two-carryover-button" 
+                                   ng-disabled="checkVersionOfCog()" ng-click="showCarryOverDamageDialog($event)">
+                            Carry Over Damage
+                        </md-button>
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                        <md-button ng-model="data.damageAnalysis" class="md-primary md-raised cog-version-two-carryover-button"
+                                   ng-click="showDamageAnalysisDialog($event)">
+                            Damage Analysis
+                        </md-button>
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                        <md-button ng-model="data.sosCards" class="md-primary md-raised cog-version-two-carryover-button"
+                                   ng-click="showSosCardsDialog($event)">
+                            SOS Cards
+                        </md-button>
+                    </div>
+                    <div class="divTableCellMainDisplay">
+                        <md-button ng-model="data.about" class="md-primary md-raised cog-version-two-carryover-button"
+                                   ng-click="showAboutDialog($event)">
+                            About
+                        </md-button>
+                    </div>
+                
+            </div>
+        </div>
+        
+        <!--<div id="trashCan" onclick="trashCan()">--.
+                
+                <!--<ul>
+                    <li onmouseover="hover('Trashcan.png')"></li>
+                    <li onmouseover="hover('TrashcanOpen.png')"></li>
+                </ul>-->
+            <!--/div>-->
+        
+    <!--<div id="ResetBoard"><md-button class="md-raised md-primary" ng-click="resetBoard()">Reset Board</md-button></div>-->
+    <div style="visibility: hidden">
+        <div class="md-dialog-container" id="carryOverDamage">
+            <md-dialog layout-padding>
+                <h2>Carry Over Damage</h2>
+                <p>Carry over damage is damage done after the original layer of a cog has been defeated. Only damage dealt after an
+                entire cog's original layer is destoryed is applied to the skelecog underneath in the current round. This tool should help aid
+                you in finding how much damage to deal in the next round. Defeating the first layer on a cog will cause the
+                cog to not attack after all gags have been used.<br /><br />
+                
+                To give an example, let's take a level 12 2.0 cog. Let's say in the first round one toon uses some type of lure
+                and three toons use a maxed storm cloud. Assuming the lure hits, the toons end up hitting a total of 408 damage.
+                A 2.0 cog has 400 health (double the health of a level 12 1.0 cog). So you would think that the cog would be
+                completely destroyed. However, 240 damage was applied to the first layer while only 168 damage was applied
+                to the second layer. Since a maxed storm cloud hits 80 we do 80 * 3 = 240 damage (80 damage for each storm cloud
+                times 3 clouds used; the red number that pops up). This destroys the first layer of the cog without carrying over 
+                the remaining 40 damage. We then apply the track bonus damage of 20% (the yellow number that pops up) which turns 
+                out to be 48. Afterwards, we then apply the lured bonus damage of 50% of the total storm clouds which ends up to be
+                120 damage. 48 + 120 = 168 damage. Therefore, the first layer of the cog is destroyed, so the cog won't attack
+                at the end of the round, but the cog will still have 32 HP (200-168) remaining. Note: The lured bonus damage is put into
+                the calculation after the track bonus damage even though it visually appears before. 
+                
+                </p>
+                <!--TODO: Finish adding the layers here as well.-->
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><b>Level of Cog</b></div>
+                            <div class="divTableCell"><b>First Layer Damage</b></div>
+                            <div class="divTableCell"><b>Second Layer Damage</b></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 1</div>
+                            <div class="divTableCell"><div class="level1FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level1SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 2</div>
+                            <div class="divTableCell"><div class="level2FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level2SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 3</div>
+                            <div class="divTableCell"><div class="level3FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level3SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 4</div>
+                            <div class="divTableCell"><div class="level4FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level4SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 5</div>
+                            <div class="divTableCell"><div class="level5FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level5SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 6</div>
+                            <div class="divTableCell"><div class="level6FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level6SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 7</div>
+                            <div class="divTableCell"><div class="level7FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level7SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 8</div>
+                            <div class="divTableCell"><div class="level8FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level8SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 9</div>
+                            <div class="divTableCell"><div class="level9FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level9SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 10</div>
+                            <div class="divTableCell"><div class="level10FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level10SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 11</div>
+                            <div class="divTableCell"><div class="level11FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level11SecondLayer">&nbsp;</div></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Level 12</div>
+                            <div class="divTableCell"><div class="level12FirstLayer">&nbsp;</div></div>
+                            <div class="divTableCell"><div class="level12SecondLayer">&nbsp;</div></div>
+                        </div>
+                    </div>
+                </div>
+            </md-dialog>
+        </div>
+    </div>
+    <div style="visibility: hidden">
+        <div class="md-dialog-container" id="damageAnalysis">
+            <md-dialog layout-padding>
+                <h2>Damage Analysis</h2>
+                <p>
+                    To be added
+                </p>
+            </md-dialog>
+        </div>
+    </div>
+    <div style="visibility: hidden">
+        <div class="md-dialog-container" id="sosCards">
+            <md-dialog layout-padding>
+                <h2>SOS Cards</h2>
+                <p>
+                    To be added
+                </p>
+            </md-dialog>
+        </div>
+    </div>
+    <div style="visibility: hidden">
+        <div class="md-dialog-container" id="about">
+            <md-dialog layout-padding>
+                <h2>About</h2>
+                <p>
+                    To be added
+                </p>
+            </md-dialog>
+        </div>
+    </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc.5/angular-material.min.js"></script>
+    <script src='scripts/Gag.js'></script>
+    <script src='scripts/Cog.js'></script>
+    <script src='scripts/GagCalculator.js'></script>
+    <script src="scripts/Angular.js"></script>
+</body>
+</html>

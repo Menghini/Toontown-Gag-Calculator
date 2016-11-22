@@ -1,0 +1,623 @@
+﻿body { 
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+
+}
+@font-face{
+    font-family: impress;
+    src: url('fonts/impress.ttf')
+}
+#table{
+    display: table;
+	width: 100%;
+}
+#tableBody{
+    display: table-row-group;
+}
+#allGagContainer{
+    /*background-color: #49c155;*/
+    display: table-row-group;
+    background-color: green;
+    border-radius: 25px;
+    width: 900px;
+    height: 700px;
+    /*padding: 2%;*/
+    border: 40px solid green;
+
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    margin: auto;
+    
+    /*Changing the font*/
+    font-family: impress;
+    font-size: 20px;
+
+    /*Not all text to be selected*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+#gagRow{
+    display: table-row;
+}
+#XPContainer{
+    text-align: center;
+    width: 152px;
+    height: 28px;
+
+}
+#gagContainer{
+    display: table-cell;
+    width: 90px;
+    height: 40px;
+    padding: 3px;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+}
+#gagCounter{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    color: white;
+}
+
+/*****Toonup*****/
+#toonupContainer{
+    background-color: #c68bf0;
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+
+}
+#toonupXPContainer{
+    background-color: #7e5899;
+}
+/*#toonupGagContainer{
+    background-color: #8b61a8;
+    border-radius: 25px;
+    height: 100%;
+}*/
+
+#featherGagContainer{
+    /*background-image: url('images/gags/feather.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url('images/gags/feather.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#megaphoneGagContainer{
+    background: url('images/gags/megaphone.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#lipstickGagContainer{
+    background: url('images/gags/lipstick.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#bambooCaneGagContainer{
+    background: url('images/gags/bambooCane.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#pixieDustGagContainer{
+    background: url('images/gags/pixieDust.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#jugglingBallsGagContainer{
+    background: url('images/gags/jugglingBalls.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#highDiveGagContainer{
+    background: url('images/gags/highDive.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+/*****Trap*****/
+#trapContainer{
+    background-color: #eaef57;
+    
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#trapXPContainer{
+    background-color: #959937;
+}
+#bananaPeelGagContainer{
+    background: url('images/gags/bananaPeel.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#rakeGagContainer{
+    background: url('images/gags/rake.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#marblesGagContainer{
+    background: url('images/gags/marbles.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#quickSandGagContainer{
+    background: url('images/gags/quickSand.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#trapdoorGagContainer{
+    background: url('images/gags/trapdoor.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#tntGagContainer{
+    background: url('images/gags/tnt.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#railroadGagContainer{
+    background: url('images/gags/railroad.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+#lureContainer{
+    background-color: #4ab247;
+    
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#lureXPContainer{
+    background-color: #2f722d;
+}
+#oneBillGagContainer{
+    background: url('images/gags/oneBill.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#smallMagnetGagContainer{
+    background: url('images/gags/smallMagnet.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#fiveBillGagContainer{
+    background: url('images/gags/fiveBill.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#bigMagnetGagContainer{
+    background: url('images/gags/bigMagnet.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#tenBillGagContainer{
+    background: url('images/gags/tenBill.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#hypnoGogglesGagContainer{
+    background: url('images/gags/hypnoGoggles.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#presentationGagContainer{
+    background: url('images/gags/presentation.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+#soundContainer{
+    background-color: #5765e0;
+    
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#soundXPContainer{
+    background-color: #37408f;
+}
+#bikeHornGagContainer{
+    background: url('images/gags/bikeHorn.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#whistleGagContainer{
+    background: url('images/gags/whistle.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#bugleGagContainer{
+    background: url('images/gags/bugle.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#aoogahGagContainer{
+    background: url('images/gags/aoogah.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#elephantTrunkGagContainer{
+    background: url('images/gags/elephantTrunk.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#foghornGagContainer{
+    background: url('images/gags/foghorn.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#operaSingerGagContainer{
+    background: url('images/gags/operaSinger.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+#throwContainer{
+    background-color: #f0883e;
+    
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#throwXPContainer{
+    background-color: #995727;
+}
+#cupcakeGagContainer{
+    background: url('images/gags/cupcake.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#fruitPieSliceGagContainer{
+    background: url('images/gags/fruitPieSlice.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#creamPieSliceGagContainer{
+    background: url('images/gags/creamPieSlice.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#wholeFruitPieGagContainer{
+    background: url('images/gags/wholeFruitPie.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#wholeCreamPieGagContainer{
+    background: url('images/gags/wholeCreamPie.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#birthdayCakeGagContainer{
+    background: url('images/gags/birthdayCake.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#weddingCakeGagContainer{
+    background: url('images/gags/weddingCake.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+#squirtContainer{
+    background-color: #ef3dbb;
+    
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#squirtXPContainer{
+    background-color: #992777;
+}
+#squirtingFlowerGagContainer{
+    background: url('images/gags/squirtingFlower.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#glassOfWaterGagContainer{
+    background: url('images/gags/glassOfWater.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#squirtGunGagContainer{
+    background: url('images/gags/squirtGun.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#seltzerBottlePieGagContainer{
+    background: url('images/gags/seltzerBottle.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#fireHosePieGagContainer{
+    background: url('images/gags/fireHose.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#stormCloudGagContainer{
+    background: url('images/gags/stormCloud.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#geyserGagContainer{
+    background: url('images/gags/geyser.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+#dropContainer{
+    background-color: #3fe4ef;
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    border-radius: 25px;
+}
+#dropXPContainer{
+    background-color: #289199;
+}
+#flowerPotGagContainer{
+    background: url('images/gags/flowerPot.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#sandbagGagContainer{
+    background: url('images/gags/sandbag.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#anvilGagContainer{
+    background: url('images/gags/anvil.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#bigWeightPieGagContainer{
+    background: url('images/gags/bigWeight.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#safeGagContainer{
+    background: url('images/gags/safe.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#grandPianoGagContainer{
+    background: url('images/gags/grandPiano.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+#toontanicContainer{
+    background: url('images/gags/toontanic.png') no-repeat center;
+    background-color: #0071bc;
+    border-radius: 25px;
+    height: 100%;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+/*div.trashCan{
+    content:url('images/Trashcan.png');
+}
+div.trashCan:hover{
+    content:url('images/TrashcanOpen.png');
+}*/
+#trashCan{
+    background: url('images/Trashcan.png') no-repeat ;
+    height: 100%;
+}
+
+.divTable{
+	display: table;
+	width: 97%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCellMainDisplay {
+	/*border: 1px solid #999999;*/
+	display: table-cell;
+	padding: 3px 10px;
+    vertical-align: top;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+    vertical-align: top;
+}
+.divTableHeading {
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+#ResetBoard{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+#versionTwoCogs{
+    width: 30px;
+}

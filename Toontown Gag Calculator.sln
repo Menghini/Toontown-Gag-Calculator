@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4F52BF8-B4B1-49BA-96B2-6DA9BB27547B}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		stylesheet.css = stylesheet.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{3CC018B1-E4B3-4040-8A89-F7C0A240EC4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{1EA0C343-D53F-4286-85C7-CAEBDD663F8C}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\Angular.js = scripts\Angular.js
+		scripts\Cog.js = scripts\Cog.js
+		scripts\Gag.js = scripts\Gag.js
+		Scripts\GagCalculator.js = Scripts\GagCalculator.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CC018B1-E4B3-4040-8A89-F7C0A240EC4A} = {C4F52BF8-B4B1-49BA-96B2-6DA9BB27547B}
+		{1EA0C343-D53F-4286-85C7-CAEBDD663F8C} = {C4F52BF8-B4B1-49BA-96B2-6DA9BB27547B}
+	EndGlobalSection
+EndGlobal
